@@ -60,7 +60,7 @@ class MainActivity : ComponentActivity() {
                                         contentColor = white,
                                         ),
                                     onClick = {
-                                         val message =     mainViewModel.applyConvert(
+                                         val message = mainViewModel.applyConvert(
                                                   sellAmount = sellAmount,
                                                   sellCurrency = sellCurrency,
                                                   receiveAmount = receiveAmount,

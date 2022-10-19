@@ -14,7 +14,7 @@ data class Resource<out T>(val status: Status, val data: T?, val message: String
     companion object {
 
         fun <T> idle(data: T? = null): Resource<T> {
-            return Resource(Status.LOADING, data, null)
+            return Resource(Status.IDLE, data, null)
         }
 
         fun <T> success(data: T): Resource<T> {
